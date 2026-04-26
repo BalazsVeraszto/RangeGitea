@@ -6,10 +6,10 @@ networks:
 
 services:
   server:
-    image: gitea/gitea:1.20.4
+    image: gitea/gitea:1
     container_name: gitea
     environment:
-      - USER=gitea
+      - USER=git
       - USER_UID=1001
       - USER_GID=1001
     restart: always
